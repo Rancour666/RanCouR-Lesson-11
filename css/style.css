@@ -362,15 +362,15 @@ a:active, a:focus { outline: none; }
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 70%;
-	height: 70%;
+	width: 90%;
+	height: 90%;
 	z-index: 4;
 	background: url('../img/planets/planet_03.png') bottom right / 650px no-repeat;
 }
 .fullscreen_sky-two:after {
 	content: '';
 	position: absolute;
-	top:0%;
+	top:0;
 	left: 10px;
 	width: 90%;
 	height: 90%;
