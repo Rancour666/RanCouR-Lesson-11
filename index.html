@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 11</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main>
+				<div id="a0" class="fullscreen">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Домашнее Задание №11</div>
+						<div class="fullscreen__topic">CSS позиционирование</div>
+						<nav class="fullscreen__menu menu-fullscreen">
+							<ul class="menu-fullscreen__list">
+								<li><a href="#a1" class="menu-fullscreen__link">Static</a></li>
+								<li><a href="#a2" class="menu-fullscreen__link">Relative [+top,left]</a></li>
+								<li><a href="#a3" class="menu-fullscreen__link">Relative [+z-index]</a></li>
+								<li><a href="#a4" class="menu-fullscreen__link">Absolute [+ position: relative; у родителя +top,left]</a></li>
+								<li><a href="#a5" class="menu-fullscreen__link">Absolute [+top,left]</a></li>
+								<li><a href="#a6" class="menu-fullscreen__link">Fixed [+width: 100%; +top,left]</a></li>
+								<li><a href="#a7" class="menu-fullscreen__link">Sticky</a></li>
+								<li><a href="#a8" class="menu-fullscreen__link">Additional Task</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="#a1" class="page-switch"></a>
+					<div class="fullscreen__background"><img src="img/fullscreen_01.jpg" alt="fullscreen__background"></div>
+					<div class="fullscreen__elements-background"><!--Этот элемент не пустой, он нужен!!! К нему в CSS привязан туман, задан через background этого блока!!!  --></div>
+				</div>
+				<div class="fullscreen fullscreen_sky">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a1" class="static">
+					<div class="static__container _container">
+						<div class="static__title title-general">Static</div>
+						<div class="static__text text-general">Элементы отображаются как обычно. Использование свойств left, top, right, bottom и z-index не приводит к каким-либо результатам.</div>
+						<div class=" image-block">
+							<div class="image-block__eagle"><img src="img/eagle.png" alt="eagle"></div>
+							
+						</div>
+					</div>
+					<div class="static__bear"><img src="img/bear.png" alt="eagle"></div>
+					<a href="#a2" class="page-switch"></a>
+					<a href="#a0" class="page-switch-back"></a>
+					<div class="static__background"><img src="img/mountain_02.jpg" alt="static__background"></div>
+				</div>
+				<div class="fullscreen fullscreen_sky-two">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a2" class="relative-first">
+					<div class="relative-first__container _container">
+						<div class="relative-first__title title-general">Relative [+top,left]</div>
+						<div class="relative-first__text text-general">Положение элемента устанавливается относительно его исходного положения в коде. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</div>
+					</div>
+					<div class="relative-first__albatross"><img src="img/albatross.png" alt="albatross"></div>
+					<div class="relative-first__ship"><img src="img/ship.png" alt="ship"></div>
+					<a href="#a3" class="page-switch"></a>
+					<a href="#a1" class="page-switch-back"></a>
+					<div class="relative-first__background"><img src="img/sea.jpg" alt="relative-first__background"></div>
+				</div>
+				<div class="fullscreen fullscreen_sky-three">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a3" class="relative-second">
+					<div class="relative-second__container _container">
+						<div class="relative-second__title title-general">Relative [+z-index]</div>
+						<div class="relative-second__text text-general">Каждый элемент может находиться как ниже, так и выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. Это свойство работает только для элементов, у которых значение position задано как absolute, fixed или relative.</div>
+					</div>
+					<div class="relative-second__camels"><img src="img/camels.png" alt="camels"></div>
+					<div class="relative-second__camel"><img src="img/camel.png" alt="camels"></div>
+					<div class="relative-second__palm-one"><img src="img/palms/palm_01.png" alt="palm"></div>
+					<div class="relative-second__palm-two"><img src="img/palms/palm_03.png" alt="palm"></div>
+					<div class="relative-second__sun"><img src="img/palms/sun.png" alt="sun"></div>
+					<a href="#a4" class="page-switch"></a>
+					<a href="#a2" class="page-switch-back"></a>
+					<div class="relative-second__background"><img src="img/sendsea.jpg" alt="relative-second__background"></div>
+				</div>
+				<div class="fullscreen fullscreen_sky">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a4" class="absolute-first">
+					<div class="absolute-first__container _container">
+						<div class="absolute-first__title title-general">Absolute [+ position: relative; у родителя +top,left]</div>
+						<div class="absolute-first__text text-general">Элемент якобы вырывается из кода и зависайт в воздухе. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно родителя у колого задан параметр position: relative;</div>
+					</div>
+					<div class="absolute-first__baby-seal"><img src="img/arctic/seal_02.png" alt="baby-seal"></div>
+					<div class="absolute-first__penguins"><img src="img/arctic/penguins_02.png" alt="penguins"></div>
+					<div class="absolute-first__arctic-bird"><img src="img/arctic/arctic-bird.png" alt="arctic-bird"></div>
+					<a href="#a5" class="page-switch"></a>
+					<a href="#a3" class="page-switch-back"></a>
+					<div class="absolute-first__background"><img src="img/arctic/arctic.jpg" alt="absolute-first__background"></div>
+					<div class="absolute-first__elements-background"><!--Этот элемент не пустой, он нужен!!! К нему в CSS привязан туман, задан через background этого блока!!!  --></div>
+				</div>
+				<div class="fullscreen fullscreen_sky-two">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a5" class="absolute-second">
+					<div class="absolute-second__container _container">
+						<div class="absolute-second__title title-general">Absolute [+top,left]</div>
+						<div class="absolute-second__text text-general">Элемент якобы вырывается из кода и зависайт в воздухе. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно родителя у колого задан параметр position: relative; Если такого нет то элемент позиционируется относительно окна браузера.</div>
+					</div>
+					<div class="absolute-second__other-parrot"><img src="img/jungle/parrot_02.png" alt="parrot"></div>
+					<div class="absolute-second__parrot"><img src="img/jungle/parrot_01.png" alt="parrot"></div>
+					<div class="absolute-second__monkey"><img src="img/jungle/monkey_on_tree.png" alt="monkey"></div>
+					<a href="#a6" class="page-switch"></a>
+					<a href="#a4" class="page-switch-back"></a>
+					<div class="absolute-second__background"><img src="img/jungle/jungle.jpg" alt="absolute-second__background"></div>
+					<div class="absolute-second__elements-background"><!--Этот элемент не пустой, он нужен!!! К нему в CSS привязан туман, задан через background этого блока!!!  --></div>
+				</div>
+				<div class="fullscreen fullscreen_sky-three">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a6" class="fixed">
+					<div class="fixed__container _container">
+						<div class="fixed__title title-general">Fixed [+width: 100%; +top,left]</div>
+						<div class="fixed__text text-general">Элемент якобы вырывается из кода и зависайт в воздухе. Фиксируется, то есть не скролится вместе с содержимым. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону относительно окна браузера.</div>
+					</div>
+					<div class="fixed__firework-first"><img src="img/night-city/fireworks_01.png" alt="firework"></div>
+					<div class="fixed__firework-second"><img src="img/night-city/fireworks_02.png" alt="firework"></div>
+					<div class="fixed__firework-third"><img src="img/night-city/fireworks_01.png" alt="firework"></div>
+					<div class="fixed__firework-fourth"><img src="img/night-city/fireworks_02.png" alt="firework"></div>
+					<div class="fixed__fixed-image"><img src="img/night-city/image-fixed.jpg" alt="freelancer"></div>
+					<div class="fixed__couple"><img src="img/night-city/couple_02.png" alt="couple"></div>
+					<a href="#a7" class="page-switch"></a>
+					<a href="#a5" class="page-switch-back"></a>
+					<div class="fixed__background"><img src="img/night-city/night-city.jpg" alt="fixed__background"></div>
+				</div>
+				<div class="fullscreen fullscreen_sky">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a7" class="sticky">
+					<div class="fixed__container _container">
+						<div class="sticky__title title-general">Sticky*</div>
+						<div class="sticky__text text-general">Это гибридное сочетание значений static и fixed. Изначально єлемент ведет себя как static но после того как скролл доходит до его границы он становиться fixed и прилипает к указанной позиции top или bottom.</div>
+					</div>
+					<div class="sticky__fish-first"><img src="img/underwater/fish_01.png" alt="fish"></div>
+					<div class="sticky__fish-second"><img src="img/underwater/fish_02.png" alt="fish"></div>
+					<div class="sticky__fish-third"><img src="img/underwater/fish_03.png" alt="fish"></div>
+					<div class="sticky__fish-fourth"><img src="img/underwater/fish_04.png" alt="fish"></div>
+					<div class="sticky__fish-fifth"><img src="img/underwater/fish_05.png" alt="fish"></div>
+					<div class="sticky__sticky-image"><img src="img/night-city/image-sticky.jpg" alt="freelancer"></div>
+					<div class="sticky__sticky-image sticky__sticky-image_second"><img src="img/underwater/evgen.jpg" alt="freelancer"></div>
+					<div class="sticky__sticky-image sticky__sticky-image_third"><img src="img/underwater/jeka.jpg" alt="freelancer"></div>
+					<div class="sticky__coral"><img src="img/underwater/coral.png" alt="coral"></div>
+					<a href="#a8" class="page-switch"></a>
+					<a href="#a6" class="page-switch-back"></a>
+					<div class="sticky__background"><img src="img/underwater/underwater.jpg" alt="fixed__background"></div>
+				</div>
+				<div class="fullscreen fullscreen_sky-two">
+					<div class="fullscreen__container _container">
+						<div class="fullscreen__title title-general">Живи! А работай в свободное время!</div>
+					</div>
+				</div>
+				<div id="a8" class="additional">
+					<div class="additional__header"><img src="img/additional/header.jpg" alt="add-header"></div>
+					<div class="additional__container _container-additional">
+						<div class="additional__body content-additional">
+							<div class="content-additional__title">Who we are</div>
+							<div class="content-additional__subtitle">Nemo enim ipsam voluptatem quia voluptas in proident</div>
+							<div class="content-additional__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</div>
+							<div class="content-additional__image"><img src="img/additional/dog.png" alt="dog"></div>
+							<div class="content-additional__bg"><img src="img/additional/blob.png" alt="blob"></div>
+						</div>
+					</div>
+					<a href="#a0" class="page-switch-back page-switch-back_last-button"></a>
+				</div>
+			</main> 
+		</div>
+	</body>
+</html>
