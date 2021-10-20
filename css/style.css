@@ -403,7 +403,7 @@ a:active, a:focus { outline: none; }
 .fullscreen_sky-three:after {
 	content: '';
 	position: absolute;
-	top:;
+	top:0;
 	right: 0px;
 	width:80%;
 	height: 80%;
@@ -416,7 +416,7 @@ a:active, a:focus { outline: none; }
 }
 .fullscreen_sky-three:hover:before {
 	transform: rotate(-360deg);
-	transition: all 180s ease 0s;
+	transition: all 280s ease 0s;
 }
 
 
