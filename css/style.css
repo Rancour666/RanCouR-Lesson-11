@@ -193,7 +193,7 @@ a:active, a:focus { outline: none; }
 .fullscreen {
 	min-height: 100vh;
 	position: relative;
-	padding: 100px 0px;
+	padding: 60px 0px;
 	z-index: 10;
 }
 
