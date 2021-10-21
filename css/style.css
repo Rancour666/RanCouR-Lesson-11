@@ -1005,7 +1005,59 @@ a:active, a:focus { outline: none; }
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	opacity: 0.7;
+	opacity: 1;
+}
+
+
+.fixed__fixed-image::before{
+	content: '';
+	top: 50%;left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: url('../img/night-city/image-fixed.jpg') center / 265px 140px no-repeat;
+	z-index:21;
+	position: absolute;
+}
+.fixed__fixed-image::after{
+	content: '';
+	top: 50%;left: 50%;
+	transform: translate(-50%, -50%);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.508);
+	z-index:20;
+	position: absolute;
+}
+
+.fixed__fixed-image-turntable{
+	position: fixed;
+	top:3%;
+	right: 3%;
+	width: 731px;
+	height: 579px;
+	z-index: 12;
+	transform: translate(290px, -192px) scale(0.29) rotate(90deg);
+}
+.fixed__fixed-image-turntable-arm{
+	position: fixed;
+	top:3%;
+	right: 3%;
+	width: 731px;
+	height: 579px;
+	z-index: 13;
+	transform: translate(285px, -118px) scale(0.265) rotate(99deg);
+}
+
+.wrapper:hover .fixed__fixed-image img{
+	transform: rotate(3600deg);
+	transition: all 38800000s linear 0s;
+}
+.wrapper:hover .fixed__fixed-image{
+	transform: rotate(3600deg);
+	transition: all 240s linear 0s;
 }
 
 
